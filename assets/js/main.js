@@ -28,31 +28,4 @@ const items = [
 
   /* funcionalidad de animacion de icon incio*/
 
-  const loadComponent =()=>{
-    const loader = document.getElementById("loader")
-
-    setTimeout( () => {
-      loader.classList.add("hide")
-   }, 3000);
-  }
-  
-
-  /* funcion de cambio de tema*/
-document.addEventListener("DOMContentLoaded",()=>{
-
-})
-
-
-const themeIcon = document.getElementById("theme-btn")
-
-themeIcon.addEventListener("click",()=>{
-
-    document.body.classList.toggle("dark")
  
-    if (themeIcon.classList.contains("bx-moon")) {
-      themeIcon.classList.replace("bx-moon" , "bx-sun")
-    }else{ 
-      themeIcon.classList.replace("bx-sun" , "bx-moon")
-    }
-
-})
