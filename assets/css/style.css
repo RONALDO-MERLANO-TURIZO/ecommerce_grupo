@@ -246,6 +246,9 @@ button:hover {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+}
+
+.container--cards:hover{
   padding: 10px;
   border: 1px solid var(--text2-color);
   transition: 0.4s;
