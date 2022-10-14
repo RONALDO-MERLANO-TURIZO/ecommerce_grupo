@@ -76,12 +76,43 @@
           
           <i class='bx bx-moon bx-sm ' id="theme-btn" ></i>
           
-          
+          <!-- Notificaciones carrito -->
           <div class="cart--container hide"       id="cart-container hide"> 
             <div class="header__cart">
               <div class="header__cart-notification"> 0 </div>
               <i class='bx bx-shopping-bag bx-sm' id="sun"></i>
+                <!-- Menú emergente al presionar  bolsa de compras -->
+               <div class="cart">
+                <h2 class="cart-title">Su carro</h2>
+                <div class="cart-content">
+
+                    <div class="cart-box">
+                        <img src="./assets/images/carro.jpg" alt="" class="cart-img">
+                        <div class="details-box">
+                            <div class="cart-product-title">Earbuds</div>
+                            <div class="cart-price">$25</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <!-- Remove Cart -->
+                        <i class='bx bxs-trash cart-remove'></i>
+                    </div>
+                </div>
+                <!-- Remove Cart -->
+
+                <!-- Total price & Items  -->
+                <div class="total">
+                    <div class="total-items__title">Total Items</div>
+                    <div class="total-items__total">2</div>
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- cart close -->
+                <i class='bx bx-x' id="close-cart"></i>
+
             </div>
+           </div>
          </div>
         
     
