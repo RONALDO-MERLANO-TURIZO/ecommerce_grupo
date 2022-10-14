@@ -254,6 +254,16 @@ button:hover {
   transition: 0.4s;
 }
 
+.cards-uno{
+  position: relative;
+}
+
+.cards-uno{
+  padding: 10px;
+  border: 1px solid var(--text2-color);
+  transition: 0.4s;
+}
+
 .cards {
   margin: 1rem;
   overflow: hidden;
