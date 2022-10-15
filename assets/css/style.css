@@ -184,7 +184,7 @@ li .nav-item .nav--ancor{
 
 .header--container-img {
   overflow: hidden;
-  background-color: var(--first-color);
+  background-color: white;
   width: 70%;
   height: 400px;
   margin-left: auto;
