@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
     <title>Academlo Store</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -14,9 +15,6 @@
 <script src="https://kit.fontawesome.com/bf2709a888.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-
-
   
     <!--========== Logo Academlo con contorno ==========-->
 
@@ -37,7 +35,6 @@
   </div>
 
 
-   
     <nav >
       <div>
        <!--=========== Logo Academlo sin contorno ==========-->
@@ -53,9 +50,6 @@
         </svg>
       </div>
       <h3 class="store">STORE</h3>
-      
-      
- 
 
         <!--menu hamburguesa-->
         <input type="checkbox" id="btn-menu">
@@ -65,48 +59,45 @@
         
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav--ancor">Home</a>
+            <a href="#home" class="nav--ancor" seleccionado>Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav--ancor">Products</a>
+            <a href="#produtcs" class="nav--ancor">Products</a>
           </li>
         </ul>
-        
-      
-          
+          <!-- Boton para el tema -->
           <i class='bx bx-moon bx-sm ' id="theme-btn" ></i>
           
           <!-- Notificaciones carrito -->
-          <div class="cart--container hide"       id="cart-container hide"> 
+          <div class="cart--container hide" id="cart-container hide"> 
             <div class="header__cart">
               <div class="header__cart-notification"> 0 </div>
-              <i class='bx bx-shopping-bag bx-sm' id="sun"></i>
+              <i class='bx bx-shopping-bag bx-sm' id="cart-icon"></i>
                 <!-- Menú emergente al presionar  bolsa de compras -->
                <div class="cart">
-                <h2 class="cart-title">Su carro</h2>
+                <h2 class="cart-title">Su Bolsa de Compra</h2>
                 <div class="cart-content">
-
                     <div class="cart-box">
-                        <img src="./assets/images/carro.jpg" alt="" class="cart-img">
+                        <img src="./assets/images/featured1.png" alt="" class="cart-img">
                         <div class="details-box">
                             <div class="cart-product-title">Earbuds</div>
-                            <div class="cart-price">$25</div>
-                            <input type="number" value="1" class="cart-quantity">
+                            <div class="container--precio-stock">$25</div>
+                            <input type="number" value="0" class="cart-quantity">
                         </div>
-                        <!-- Remove Cart -->
-                        <i class='bx bxs-trash cart-remove'></i>
+                        <!-- Icono Borrar Bolsa -->
+                        <i class='bx bxs-trash cart-remove' id="remove"></i>
                     </div>
                 </div>
-                <!-- Remove Cart -->
+                <!-- Borrar Bolsa -->
 
-                <!-- Total price & Items  -->
+                <!-- Precio total y de productos  -->
                 <div class="total">
                     <div class="total-items__title">Total Items</div>
                     <div class="total-items__total">2</div>
                     <div class="total-title">Total</div>
                     <div class="total-price">$0</div>
                 </div>
-                <!-- Buy Button -->
+                <!-- Boton Comprar -->
                 <button type="button" class="btn-buy">Buy Now</button>
                 <!-- cart close -->
                 <i class='bx bx-x' id="close-cart"></i>
@@ -114,46 +105,31 @@
             </div>
            </div>
          </div>
-        
-    
     </nav>
-    
+    <!-- Inicia el header -->
     <header class="header">
-      
       <div class="header--container-img">
-        
         <img src="/assets/images/featured2.png" alt="" class="header--img">
-        
-        
       </div>
-      
-
-<article class="header-article">
-   <h1>New Sweartshirt <br> COLLECTIONS 2022</h1>
-   
-   <p class="header--article-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita pariatur hic esse distinctio excepturi itaque quod culpa. Eum, accusantium.</p><br>
-   <span>$14.00</span><br><br>
-   
-   <div class="btn--container"> 
-
-     <button class="details__discover">
-       
-       Discover<i class="fa-solid fa-paper"></i>
-       <span class="overlay"></span>
-      </button>
-      
-      
-      <button class="details__button" >
-        addToCart<i class="fa-solid fa-paper"></i>
-        <span class="overlay"></span>
-      </button>
+    //Texto Principal
+    <article class="header-article">
+      <h1>New Sweartshirt <br> COLLECTIONS 2022</h1>
+      <p class="header--article-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita pariatur hic esse distinctio excepturi itaque quod culpa. Eum, accusantium.</p><br>
+      <span>$14.00</span><br><br>
+      <div class="btn--container"> 
+        <button class="details__discover">
+          Discover<i class="fa-solid fa-paper"></i>
+          <span class="overlay"></span>
+          </button>
+          <button class="details__button" >
+            addToCart<i class="fa-solid fa-paper"></i>
+            <span class="overlay"></span>
+          </button>
+      </div>
     </article>
   </header>
   
 </div>
-
-   
-
 <main>
   
   <div class="container--column">
@@ -171,48 +147,35 @@
                     <!--card-->
 <div class="container--cards">
 
-  
-
   <div class="cards uno">
     <img src="./assets/images/featured1.png" alt="" class="img--cards">
-   
     <!--btn comprar plus-->
-    <i class='bx bx-plus'></i>
-
-     <div class="container--precio-stock">  <p class="precio">$14.00 <span>| Stock: <span class="stock">2</span></span></p>
+    <i class='bx bxs-plus-circle bx-md add-cart' id="plus"></i>
+     <div class="container--precio-stock">$14.00 <span>| Stock: <span class="stock">2</span></span></p>
+      
     </div> 
-    <p>Hoodies</p>
+    <div class="cart-product-title"><p>Hoodies</p></div>
   </div>
 
-
-  
   <div class="cards dos">
     <img src="./assets/images/featured2.png" alt="" class="img--cards">
-   
     <!--btn comprar plus-->
-    <i class='bx bx-plus'></i>
-    
-     <div class="container--precio-stock">  <p class="precio">$14.00 <span>| Stock: <span class="stock">2</span></span></p>
+    <i class='bx bx bxs-plus-circle bx-md add-cart' id="plus"></i>
+     <div class="container--precio-stock">  <p class="precio">$14.00 <span>| Stock: <span class="stock">2</span></span>
+    </p>
     </div> 
-    <p>Hoodies</p>
+    <div class="cart-product__title"><p>Saco</p></div>
   </div>
-
-
-
-
-
-
-
   
   <div class="cards tres">
     <img src="./assets/images/featured3.png" alt="" class="img--cards">
    
     <!--btn comprar plus-->
-    <i class='bx bx-plus'></i>
+    <i class='bx bx bxs-plus-circle bx-md add-cart' id="plus"></i>
     
      <div class="container--precio-stock">  <p class="precio">$14.00 <span>| Stock: <span class="stock">2</span></span></p>
     </div> 
-    <p>Hoodies</p>
+    <div class="cart-product-title"><p>Sudaderas</p></div>
   </div>
 
 
@@ -232,7 +195,7 @@
       <a href="#"><i class="fa-solid fa-rss"></i></a>
   </div>
   <div class="footer_copyright">
-      <small>Copyright. &copy;|Todos los derechos reservados. Creado por: Adalberto A, Ronaldo M, Wilmer A.</small>
+      <small>Copyright. &copy;|Todos los derechos reservados. Creado por: Adalberto Agudelo, Ronaldo Meriano, Wilmer Mosquera.</small>
   </div>
 </footer>
 <!-- Aquí termina la Sección del footer -->
