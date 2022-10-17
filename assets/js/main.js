@@ -105,6 +105,23 @@ addToCartBtn.addEventListener('click', () => {
   cartNotification.style.display = 'block';
 });
 
+/* Mostrar el modal del carrito */
+const cartIconBtn = document.querySelector('.header__cart');
+const cartModal = document.querySelector('.cart');
+
+cartIconBtn.addEventListener('click', () => {
+  cartModal.style.display ='block';
+});
+
+//Borrar el contenido del carrito
+const deleteProductBtn = document.querySelector('#cart-remove');
+const productContainer = document.querySelector('btn-buy');
+
+deleteProductBtn.addEventListener('click', () =>{
+  productContainer.innertext = 'Acabas de eleminiar tus productos';
+});
+
+
 /*
 //organizaremos el boton mas y menos = cambio de cantidad de articulos ingresados por el usuario.
 let plusBtn = document.querySelector('.add-cart');
